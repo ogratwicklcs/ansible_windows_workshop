@@ -47,7 +47,7 @@ you previously made `iis_basic`.
 Step 2: Create a folder called **iis_advanced** and a file called `site.yml`
 -----------------------------------------------------------------------------
 
-Hover over the *WORKSHOP_PROJECT* section and click the *New Folder* button
+After clicking on README.md, hover over the *WORKSHOP_PROJECT* section and click the *New Folder* button
 
 Type `iis_advanced` and hit enter. Now, click that folder so it is
 selected.

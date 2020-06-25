@@ -43,17 +43,17 @@ Type `app_manage.yml` and hit enter.
 
 ![Empty site.yml](images/8-create-list-empty.ja.jpg)
 
-## Playbook の作成
+## Creating a playbook
 
-今から二つの Playbook を作成します。
+We are going to create two playbooks now.
 
-**1. app_list.yml:**  
-　chocolatey 経由で管理されているアプリケーションの一覧を表示します。  
-**2. app_manage.yml:**  
-　アプリケーションの追加、削除、更新を行います。  
+1. app_list.yml:
+　Display a list of applications managed via chocolatey.
+2. app_manage.yml:
+　Add, remove and update applications.
 
-まず、1から作成してみましょう。  
-`app_list.yml` の Playbook 編集用のエディターが右ペインに開いていることを確認し、以下作業を行います。  
+First, let's create from 1.
+app_list.ymlMake sure that the editor for editing the Playbook is open in the right pane and do the following:
 
 <!-- {% raw %} -->
 ```yaml
@@ -73,12 +73,12 @@ Type `app_manage.yml` and hit enter.
 
 ![app_list.yml](images/8-create-list.ja.jpg)
 
-> **ヒント**
+> **Tips**
 >
-> `win_chocolatey_facts:` chocolatey で管理するアプリケーションに関する情報を取得するモジュールです。今回は、アプリケーションインストール前後で動作させてみて、インストールされたパッケージの差異を確認します。  
+> `win_chocolatey_facts:` This module gets information about applications managed by chocolatey. This time, try running it before and after installing the application to check the differences in the installed packages.
 
 
-次に、`app_manage.yml` をクリックして、Playbook を以下のように編集してください。    
+Then、`app_manage.yml` click on and edit the playbook as follows:   
 
 <!-- {% raw %} -->
 ```yaml
@@ -96,35 +96,33 @@ Type `app_manage.yml` and hit enter.
 
 ![app_manage.yml](images/8-create-mamage.ja.jpg)
 
-> **ヒント**
+> **Tips**
 >
-> `win_chocolatey:` chocolatey リポジトリと連携してアプリケーションを追加、削除、更新するモジュールです。今回はほんの一例として Googoe Chrome をインストールしてみました。他にも、`name` に `jre8` を指定すると、Javaのランタイム、そのほか、`putty`、`vscode`などと記述すれば、それぞれのアプリケーションを管理することが可能です。  
+> `win_chocolatey:` A module that adds, deletes, and updates applications in cooperation with the chocolatey repository. This time we installed Googoe Chrome as an example. 
 
-## 保存とコミット
+## Save and commit
 
-chocolatey でアプリケーション一覧を表示させる Playbook 及び、アプリケーションの管理を行う Playbook の完成です♪  
-早速、変更を保存し、GitLabにコミットしましょう。やり方は・・・、もうわかりますね？  
+The playbook that displays the application list with chocolatey and the playbook that manages the application are complete. Save your changes and commit to GitLab like in the previous exercises.  
 
-## ジョブテンプレートの作成
+## Creating a job template
 
-新しい Playbook を作成しましたので、Ansible Tower の GUI に戻ってプロジェクトの同期を行ってください。  
-次に、このプレイブックを実行する新しいジョブテンプレートを作成する必要があります。*テンプレート*に移動して*追加*をクリックし、`ジョブテンプレート`を選択して新しいジョブテンプレートを作成します。
+Now that you have created a new playbook, go back to the Ansible Tower GUI and sync your project.
+Next, you need to create a new job template to run this playbook. Go to Templates , click Add and select Job Template to create a new job template.
 
-### 1. app_list.yml 用のジョブテンプレート作成  
+### 1. Creating a job template for app_list.yml
 
-次の値を使用してフォームに入力します。  
+Fill out the form with the following values:  
 
-| キー                | 値                      | 備考 |
+| Key                | Value                      | Remarks |
 |--------------------|----------------------------|------|
-| 名前               |Windows アプリケーション取得           |      |
-| 説明        |                            |      |
-| ジョブタイプ           | 実行                        |      |
-| インベントリー          | Windows Workshop Inventory |      |
-| プロジェクト            | Ansible Workshop Project   |      |
-| PLAYBOOK           | `chocolatey/app_list.yml`     |      |
-| 認証情報 | Student Account            |      |
-| 制限              | windows                    |      |
-| オプション            | [*] ファクトキャッシュの有効化にチェック      |      |
+| name               |Windows アプリケーション取得           |      |
+| Job type           | Execution                        |      |
+| Inventory          | Windows Workshop Inventory |      |
+| Project            | Ansible Workshop Project   |      |
+| Playbook           | `chocolatey/app_list.yml`     |      |
+| Credentials | Student Account            |      |
+| Limit              | windows                    |      |
+| Options            | 	[*] Check to enable fact cache      |      |
 
 ![Create Job Template](images/8-win_applist-template.ja.jpg)
 

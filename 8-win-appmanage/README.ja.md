@@ -1,22 +1,18 @@
-# 演習8 - Windwos のアプリケーション管理  
+# Exercise 8 - Windows Application Management  
 
-Windows を Ansible で管理するもう一つの大きなモチベーションはアプリケーションの管理の自動化です。  
+Another big motivation for managing Windows with Ansible is automation of application management. 
 
-Windows 上のアプリケーションを Ansible で管理する方法はいくつかあります。例えば、OS が提供するアプリケーションの管理であれば、演習2で行った win_feature モジュールが利用可能です。逆に OS 提供の機能ではなく、3rd パーティ製のアプリケーションの場合、[win_pacage](https://docs.ansible.com/ansible/latest/modules/win_package_module.html#win-package-module) というモジュールがあります。ただ、モジュールの Example を見ていただくと分かる通り、元来 Windows のアプリケーションはそれぞれのベンダーから CD や DVD などのメディアや msi、独自の URL で提供されるケースが多く、Linux の yum コマンドの様に、一括したリポジトリから同一手法でアプリケーションを管理する、ということがなかなか出来ませんでした。このため、パッケージの一括管理がなかなか難しかった面が否めませんでした。  
+There are several ways to manage applications on Windows with Ansible. For example, the win_feature module from Exercise 2 can be used to manage applications provided by the OS. On the other hand, if it is not a function provided by the OS but by a 3rd party application, there is a module called win_package and win_chocolatey.
 
-しかし、最近、[Chocolatey](https://chocolatey.org/) というリポジトリが登場し、Windows でもLinux同様の一括したアプリケーション管理が可能となってきました。[パッケージ](https://chocolatey.org/packages)も Chrome、Firefox、JRE、Putty、Adbe Reader、MS Officeなどなど非常に多彩です。 
+### Preparation 
 
-凄く便利ですので、演習で確認してみましょう。♬  
+To use Chocolatey, you need to install chocolatey software on your Windows host. Let's also automate this with Ansible. Using Exercise 2 as a reference, use the PowerShell ad hoc commands win_shellto do the following:
 
-### 準備  
+In Ansible Tower, Inventory → Windows Workshop Inventory → Hosts
 
-Chocolatey 利用には、Windows ホストへ chocolatey ソフトをインストールする必要があります。ここもAnsibleで自動化してみましょう。演習2 を参考に、PowerShell のアドホックコマンド `win_shell` を使って以下を実行してください。  
+Check　the "student1-win1 " and click "Run Command" .
 
-Ansible Tower で、**「インベントリー」→「Windows Workshop Inventory」→「ホスト」**  
-
-で、**「student1-win1」** にチェックを入れて　**「コマンドの実行」** をクリックします。  
-
-コマンドの実行画面で、以下を入力して`起動` をクリックします。  
+On the Run Command screen, select the options below.
 
 **モジュール：**  
 　win_shell

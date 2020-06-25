@@ -26,7 +26,7 @@ you previously made iis\_basic.
 
 ![Student Playbooks](images/7-vscode-existing-folders.png)
 
-Hover over the *WORKSHOP_PROJECT* section and click the *New Folder* button. Type `win_updates` and hit enter.
+After clicking on README.md, hover over the *WORKSHOP_PROJECT* section and click the *New Folder* button to create a folder at the root directory of your Git project. Type `win_updates` and hit enter.
 
 Now richt-click the `win_updates` folder and click the *New File* button. Type `site.yml` and hit enter.
 

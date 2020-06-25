@@ -62,7 +62,7 @@ Complete the survey form with following values
 | ANSWER VARIABLE NAME   | `iis_test_message`                                         |                  |
 | ANSWER TYPE            | Text                                                       |                  |
 | MINIMUM/MAXIMUM LENGTH |                                                            | Use the defaults |
-| DEFAULT ANSWER         | *Be creative, keep it clean, we’re all professionals here* |                  |
+| DEFAULT ANSWER         | *Be creative* |                  |
 
 ![Survey Form](images/4-survey.png)
 

@@ -205,3 +205,10 @@ When prompted, enter select the update categories. Answer `Yes` to the
 
 After the job launches, you should be redirected and can watch the
 output of the job in realtime.
+
+----
+**Navigation**
+<br>
+[Previous Exercise](../6-roles) - [Next Exercise](../8-win-appmanage)
+
+

@@ -257,3 +257,9 @@ You are ready to automate!
             msg: http://{{ ansible_host }}
 ```
 <!-- {% endraw %} -->
+
+
+----
+**Navigation**
+<br>
+[Previous Exercise](../2-adhoc) - [Next Exercise](../4-projects)

@@ -425,9 +425,7 @@ Complete the survey form with following values
 | ANSWER VARIABLE NAME   | `iis_test_message`                                       |      |
 | ANSWER TYPE            | Text                                                     |      |
 | MINIMUM/MAXIMUM LENGTH | Use the defaults                                         |      |
-| DEFAULT ANSWER         | Be creative, keep it clean, we’re all professionals here |      |
-
-![Survey Form](images/5-survey.png)
+| DEFAULT ANSWER         | Be creative                                              |      |
 
 Step 5:
 -------
@@ -478,5 +476,3 @@ When the job has successfully completed, you should see two URLs to your website
 
 ![Job output](images/5-job-output.png)
 
-
-![IIS site](images/5-iis-8080.png)

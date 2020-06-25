@@ -312,3 +312,9 @@ simplifying changes to variables, tasks, templates, etc.
 
 [Ansible Galaxy](https://galaxy.ansible.com) is a good repository of
 roles for use or reference.
+
+----
+**Navigation**
+<br>
+[Previous Exercise](../5-adv-playbook) - [Next Exercise](../7-win-patch)
+

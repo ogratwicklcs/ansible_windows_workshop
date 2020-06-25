@@ -31,15 +31,15 @@ Chocolatey is now available on your Windows host. Ready!!!
 
 After clicking on README.md, hover over the WORKSHOP_PROJECT section and click the New Folder button.
 
-Type win_chocolatey and hit enter. Now, click that folder so it is selected. 
+Type `win_chocolatey` and hit enter. Now, click that folder so it is selected. 
 
-Right-click the win_chocolatey folder and select New File.
+Right-click the `win_chocolatey` folder and select New File.
 
-Type app_list.yml and hit enter. 
+Type `app_list.yml` and hit enter. 
 
-Right-click the win_chocolatey folder and select New File.
+Right-click the `win_chocolatey` folder and select New File.
 
-Type app_manage.yml and hit enter.
+Type `app_manage.yml` and hit enter.
 
 ![Empty site.yml](images/8-create-list-empty.ja.jpg)
 

@@ -23,20 +23,23 @@ On the Run Command screen, select the options below.
 **Machine Credentials:**
 　Student Account
 
-これで、Windows ホスト上で Chocolatey が利用できるようになりました。準備完了です！！  
+Chocolatey is now available on your Windows host. Ready!!!
 
-### ステップ 1:
-
-以前の演習で「iis_basic」ディレクトリなどを作成した WORKSHOP_PROJECT が存在していると思います。  
+### Step 1:
 
 ![Student Playbooks](images/8-vscode-existing-folders.ja.jpg)
 
-WORKSHOP_PROJECTセクションにカーソルを合わせ、*New Folder* ボタンをクリックします。`win_chocolatey` と入力します。  
+After clicking on README.md, hover over the WORKSHOP_PROJECT section and click the New Folder button.
 
-次に、`win_chocolatey` ホルダーを右クリックして、*New File* を選択、`app_manage.yml` と入力します。  
-もう一度、`win_chocolatey` ホルダーを右クリックして、*New File* を選択、`app_list.yml` と入力します。  
+Type win_chocolatey and hit enter. Now, click that folder so it is selected. 
 
-以下のようになっていれば OK です。♬  
+Right-click the win_chocolatey folder and select New File.
+
+Type app_list.yml and hit enter. 
+
+Right-click the win_chocolatey folder and select New File.
+
+Type app_manage.yml and hit enter.
 
 ![Empty site.yml](images/8-create-list-empty.ja.jpg)
 

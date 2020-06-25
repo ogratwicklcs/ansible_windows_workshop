@@ -14,13 +14,13 @@ Check　the "student1-win1 " and click "Run Command" .
 
 On the Run Command screen, select the options below.
 
-**モジュール：**  
+**Module：**  
 　win_shell
 
-**引数**  
+**Argument: **
 　Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
-**マシンの認証情報**  
+**Machine Credentials: **
 　Student Account
 
 これで、Windows ホスト上で Chocolatey が利用できるようになりました。準備完了です！！  

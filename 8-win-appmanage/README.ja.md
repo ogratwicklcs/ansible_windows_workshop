@@ -115,7 +115,7 @@ Fill out the form with the following values:
 
 | Key                | Value                      | Remarks |
 |--------------------|----------------------------|------|
-| name               |Windows アプリケーション取得           |      |
+| name               | Windows Application List           |      |
 | Job type           | Execution                        |      |
 | Inventory          | Windows Workshop Inventory |      |
 | Project            | Ansible Workshop Project   |      |
@@ -124,43 +124,36 @@ Fill out the form with the following values:
 | Limit              | windows                    |      |
 | Options            | 	[*] Check to enable fact cache      |      |
 
-![Create Job Template](images/8-win_applist-template.ja.jpg)
+Click Save 
 
-保存をクリックします。  
+### 2. Creating a job template for app_manage.yml 
 
-### 2. app_manage.yml 用のジョブテンプレート作成  
+Similarly, create an application management job template.
 
-同様にして、アプリケーション管理のジョブテンプレートを作成します。  
+See below for values.    
 
-値は下記参照ください。    
-
-| キー                | 値                      | 備考 |
+| Key                | Value                      | Remarks |
 |--------------------|----------------------------|------|
-| 名前               |Windows アプリケーション管理|      |
-| 説明        |                            |      |
-| ジョブタイプ           | 実行                        |      |
-| インベントリー          | Windows Workshop Inventory |      |
-| プロジェクト            | Ansible Workshop Project   |      |
-| PLAYBOOK           | `chocolatey/app_manage.yml`     |      |
-| 認証情報 | Student Account            |      |
-| 制限              | windows                    |      |
-| オプション            | [*] ファクトキャッシュの有効化にチェック      |      |
+| Name               | Windows Application Management |      |
+| Job Type           | Execution                        |      |
+| Inventory          | Windows Workshop Inventory |      |
+| Project            | Ansible Workshop Project   |      |
+| Playbook           | `chocolatey/app_manage.yml`     |      |
+| Credentials | Student Account            |      |
+| Limit              | windows                    |      |
+| options            | [*] Check to enable fact cache     |      |
 
-![Create Job Template](images/8-win_appmanage-template.ja.jpg)
 
-### Playbook の起動
+### Launch Playbook
 
-作成した Playbook を以下の順番に実行してみて、表示内容を確認してみましょう♬  
+Let's run the created Playbook in the following order and check the displayed contents 
 
-1. `Windows アプリケーション一覧取得` ジョブテンプレートの起動
-2. `Windows アプリケーション管理` ジョブテンプレートの起動
-3. `Windows アプリケーション一覧取得` ジョブテンプレートの起動
+1. `Windows Application List
+2. `Windows Application Management
 
-どうなりましたでしょうか？Chromeは追加でインストールされましたか？  
-インストールされると、以下のように表示されると思います。  
+What happened? Was Chrome additionally installed?
+Once installed, you should see something like this:
 
 ![Create Job Template](images/8-chrome-installed.ja.jpg)
 
-今回は演習を簡略化するため変数は使いませんでしたが、アプリケーション管理のところで、state オプションを変数化し、present/absent/latest を選択できるようにしておくと追加、削除、更新が実行時に選択出来て便利かもしれません。また、アプリケーションの一覧をcsv化して、そのファイルを読み込んできて複数のアプリケーションを一気にインストールなどということももちろん可能です。便利ですね。♬  
-
-これでオプションのハンズオンも終了です！お疲れさまでした！！  
+This completes the Lab 8! Thank you for your hard work! !!

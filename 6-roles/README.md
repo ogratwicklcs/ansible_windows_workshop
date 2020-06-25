@@ -20,10 +20,11 @@ Step 1:
 -------
 
 In Visual Studio Code, navigate to the Terminal drop-down menu at the top.
-![terminal menu](images/terminal.PNG)
 
 This will open a terminal with bash that will allow you to run commands on the Ansible Tower control host.  We will use this terminal to create our role folder structure.
+----
 
+![terminal menu](images/terminal.PNG)
 
 Step 2:
 -------

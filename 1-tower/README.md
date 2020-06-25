@@ -258,3 +258,10 @@ The authentication settings are particularly important and you will need
 to review them and decide which method is best for your needs.
 
 Replace the workshop name and student# 
+
+----
+**Navigation**
+<br>
+[Next Exercise](../2-adhoc)
+
+[Click here to return to the Ansible Network Automation Workshop](../README.md)

@@ -69,18 +69,18 @@ addtional packages your playbook will install on your web servers, plus
 some web server specific configurations.
 
 ```yaml
-    ---
-    - hosts: windows
-      name: This is a play within a playbook
-      vars:
-        iis_sites:
-          - name: 'Ansible Playbook Test'
-            port: '8080'
-            path: 'C:\sites\playbooktest'
-          - name: 'Ansible Playbook Test 2'
-            port: '8081'
-            path: 'C:\sites\playbooktest2'
-        iis_test_message: "Hello World!  My test IIS Server"
+---
+- hosts: windows
+  name: This is a play within a playbook
+  vars:
+    iis_sites:
+      - name: 'Ansible Playbook Test'
+        port: '8080'
+        path: 'C:\sites\playbooktest'
+      - name: 'Ansible Playbook Test 2'
+        port: '8081'
+        path: 'C:\sites\playbooktest2'
+    iis_test_message: "Hello World!  My test IIS Server"
 ```
 
 Step 4:

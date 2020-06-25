@@ -101,7 +101,7 @@ Add a new task called **install IIS**. After writing the playbook, click
           win_file:
             path: "{{ item.path }}"
             state: directory
-          with_items: "{{ iis_sites }}"
+          loop: "{{ iis_sites }}"
 
         - name: Create IIS site
           win_iis_website:
@@ -109,7 +109,7 @@ Add a new task called **install IIS**. After writing the playbook, click
             state: started
             port: "{{ item.port }}"
             physical_path: "{{ item.path }}"
-          with_items: "{{ iis_sites }}"
+          loop: "{{ iis_sites }}"
           notify: restart iis service
 ```
 <!-- {% endraw %} -->
@@ -134,7 +134,7 @@ Add a new task called **install IIS**. After writing the playbook, click
 >   list item. Each item has several variables like `name`, `port`,
 >   and `path`.
 >
-> - `with_items: "{{ iis_sites }}` This is your loop which is
+> - `loop: "{{ iis_sites }}` This is your loop which is
 >   instructing Ansible to perform this task on every `item` in
 >   `iis_sites`
 >
@@ -195,13 +195,13 @@ not escape the forward slash.
             action: Allow
             direction: In
             protocol: Tcp
-          with_items: "{{ iis_sites }}"
+          loop: "{{ iis_sites }}"
 
         - name: Template simple web site to iis_site_path as index.html
           win_template:
             src: 'index.html.j2'
             dest: '{{ item.path }}\index.html'
-          with_items: "{{ iis_sites }}"
+          loop: "{{ iis_sites }}"
 
         - name: Show website addresses
           debug:
@@ -324,7 +324,7 @@ shows line counts and spacing.
           win_file:
             path: "{{ item.path }}"
             state: directory
-          with_items: "{{ iis_sites }}"
+          loop: "{{ iis_sites }}"
 
         - name: Create IIS site
           win_iis_website:
@@ -332,7 +332,7 @@ shows line counts and spacing.
             state: started
             port: "{{ item.port }}"
             physical_path: "{{ item.path }}"
-          with_items: "{{ iis_sites }}"
+          loop: "{{ iis_sites }}"
           notify: restart iis service
 
         - name: Open port for site on the firewall
@@ -344,13 +344,13 @@ shows line counts and spacing.
             action: Allow
             direction: In
             protocol: Tcp
-          with_items: "{{ iis_sites }}"
+          loop: "{{ iis_sites }}"
 
         - name: Template simple web site to iis_site_path as index.html
           win_template:
             src: 'index.html.j2'
             dest: '{{ item.path }}\index.html'
-          with_items: "{{ iis_sites }}"
+          loop: "{{ iis_sites }}"
 
         - name: Show website addresses
           debug:

@@ -138,30 +138,8 @@ changes were made earlier.
 
 ![Win\_Feature Log Details](images/2-adhoc-run-win_feature-output.png)
 
+
 Step 5:
--------
-
-OK, IIS is installed now so let’s be certain it is started using the
-`service` module.
-
-| Key                | Value                      | Note |
-|--------------------|----------------------------|------|
-| Module             | `win_service`              |      |
-| Arguments          | `name=W3Svc state=started` |      |
-| MACHINE CREDENTIAL | Student Account            |      |
-
-Step 6:
--------
-
-Finally, let’s clean up after ourselves. First, stop the IIS service.
-
-| Key                | Value                      | Note |
-|--------------------|----------------------------|------|
-| Module             | `win_service`              |      |
-| Arguments          | `name=W3Svc state=stopped` |      |
-| MACHINE CREDENTIAL | Student Account            |      |
-
-Step 7:
 -------
 
 Next, remove the IIS feature.

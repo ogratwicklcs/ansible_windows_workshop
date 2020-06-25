@@ -19,32 +19,25 @@ Section 1: Create directory structure for your new role
 Step 1:
 -------
 
-In Visual Studio Code, navigate to explorer and your *WORKSHOP_PROJECT* section where you previously made `iis_advanced`.
+In Visual Studio Code, navigate to the Terminal drop-down menu at the top.
+![terminal menu](images/terminal.PNG)
 
-![iis\_advanced](images/6-vscode-existing-folders.png)
+This will open a terminal with bash that will allow you to run commands on the Ansible Tower control host.  We will use this terminal to create our role folder structure.
 
-Select the **iis_advanced** folder.
-
-Create a directory called **roles** by right-clicking on **iis_advanced**
-and selecting *New Folder*
-
-Now right-click **roles** and create a new folder underneath called
-`iis_simple`.
 
 Step 2:
 -------
 
-Within *iis\_simple* create new folders as follows:
+Create folder structure for your first role underneath the iis_advanced directory from with bash commands from the terminal.
 
-- defaults
-
-- vars
-
-- handlers
-
-- tasks
-
-- templates
+```bash
+[studentX@ansible ~]$ cd ~/windows-workshop/workshop_project/iis_advanced
+[studentX@ansible iis_advanced]$ mkdir roles
+[studentX@ansible roles]$ mkdir iis_simple
+[studentX@ansible roles]$ cd iis_simple
+[studentX@ansible iis_simple]$ mkdir defaults vars handlers tasks templates
+```
+![Directory](images/bash.PNG)
 
 Step 3:
 -------

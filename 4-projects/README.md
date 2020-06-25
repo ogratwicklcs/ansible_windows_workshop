@@ -166,3 +166,10 @@ At this point in the workshop, you’ve experienced the core functionality
 of Ansible Tower. But wait… there’s more! You’ve just begun to explore
 the possibilities of Ansible Tower. The next few lessons will help you
 move beyond a basic playbook.
+
+
+----
+**Navigation**
+<br>
+[Previous Exercise](../3-playbook) - [Next Exercise](../5-adv-playbook)
+

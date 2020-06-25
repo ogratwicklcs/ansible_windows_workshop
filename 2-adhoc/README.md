@@ -175,3 +175,11 @@ Ad-hoc commands may be useful to run once in a while. However, as automation con
 *Also, did you catch this?* When a task is performed on a Windows server, Ansible is smart enough to know whether a reboot is required after executing that task. The below is part of the output of the command to remove the IIS feature. The output of this task can be used in subsequent tasks, like whether or not to reboot before continuing. 
 
 ![Reboot required](images/2-adhoc-reboot-required.png)
+
+
+
+
+----
+**Navigation**
+<br>
+[Previous Exercise](../1-tower) - [Next Exercise](../3-playbook)

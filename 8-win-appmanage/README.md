@@ -98,7 +98,7 @@ Then、`app_manage.yml` click on and edit the playbook as follows:
 
 > **Tips**
 >
-> `win_chocolatey:` A module that adds, deletes, and updates applications in cooperation with the chocolatey repository. This time we installed Googoe Chrome as an example. 
+> `win_chocolatey:` A module that adds, deletes, and updates applications in cooperation with the chocolatey repository. This time we installed Google Chrome as an example. 
 
 ## Save and commit
 
@@ -116,7 +116,7 @@ Fill out the form with the following values:
 | Key                | Value                      | Remarks |
 |--------------------|----------------------------|------|
 | name               | Windows Application List           |      |
-| Job type           | Execution                        |      |
+| Job type           | Run                        |      |
 | Inventory          | Windows Workshop Inventory |      |
 | Project            | Ansible Workshop Project   |      |
 | Playbook           | `chocolatey/app_list.yml`     |      |

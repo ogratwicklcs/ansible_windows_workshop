@@ -2,17 +2,6 @@ Although it is possible to write a playbook in one file as we’ve done
 throughout this workshop, eventually you’ll want to reuse files and
 start to organize things.
 
-Ansible Roles are the way we do this. When you create a role, you
-deconstruct your playbook into parts and those parts sit in a directory
-structure. This is considered best practice and will save you a lot of
-time in the future.
-
-For this exercise, you are going to take the playbook you just wrote and
-refactor it into a role.
-
-Let’s begin with seeing how your iis-basic-playbook will break down into
-a role…
-
 Section 1: Create directory structure for your new role
 =======================================================
 
@@ -43,12 +32,10 @@ Create folder structure for your first role underneath the iis_advanced director
 Step 3:
 -------
 
-Within each of these new folders (except templates), right-click and
+Within each of these new directories (except templates), right-click and
 create *New File* Create a file called `main.yml` in each of these
-folders. You will not do this under templates as we will create
-individual template files. This is your basic role structure and
-main.yml will be the default file that the role will use for each
-section.
+directories. You will not do this under templates as this is where we will create
+individual template files. 
 
 The finished structure will look like this:
 
@@ -73,7 +60,7 @@ Create a blank new file called `site.yml` in the same folder
 Step 2:
 -------
 
-Update site.yml to look like to only call your role. It should look like
+Update site.yml.  It should look like
 below:
 
 ```yaml
@@ -116,35 +103,6 @@ Add some role-specific variables to your role in
 # vars file for iis_simple
 iis_test_message: "Hello World!  My test IIS Server"
 ```
-
-> **Note**
->
-> **Hey, wait… did we just put variables in two seperate places?**
->
-> Yes… yes we did. Variables can live in quite a few places. Just to
-> name a few:
->
-> - vars directory
->
-> - defaults directory
->
-> - group\_vars directory
->
-> - In the playbook under the `vars:` section
->
-> - In any file which can be specified on the command line using the
->     `--extra_vars` option
->
-> - On a boat, in a moat, with a goat *(disclaimer: this is a complete
->     lie)*
->
-> Bottom line, you need to read up on [variable
-> precedence](http://docs.ansible.com/ansible/latest/playbooks_variables.html#variable-precedence-where-should-i-put-a-variable)
-> to understand both where to define variables and which locations take
-> precedence. In this exercise, we are using role defaults to define a
-> couple of variables and these are the most malleable. After that, we
-> defined some variables in `/vars` which have a higher precedence than
-> defaults and can’t be overridden as a default variable.
 
 Step 5:
 -------
@@ -244,8 +202,6 @@ this playbook, so we will delete that now. Right click it and Select
 
 Step 8: Commit
 --------------
-
-Click File → Save All to ensure all your files are saved.
 
 Click the Source Code icon as shown below (1).
 

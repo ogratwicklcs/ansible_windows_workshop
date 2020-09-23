@@ -73,9 +73,9 @@ Now that you are editing `install_iis.yml`, let’s begin by defining the
 play and then understanding what each line accomplishes
 
 ```yaml
-    ---
-    - name: install the iis web service
-      hosts: windows
+---
+- name: install the iis web service
+  hosts: windows
 ```
 
 - `---` Defines the beginning of YAML

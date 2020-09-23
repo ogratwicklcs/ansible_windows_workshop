@@ -2,16 +2,7 @@ Section 1 - Creating your Playbook
 ==================================
 
 The `win_updates` module is used to either check for or to install
-Windows Updates. The module utilizes the built in Windows Update service
-to function. This means that you still will need a backend system like
-WSUS or the online Windows Update Servers to download updates from. If
-your server’s Windows Update configuration is set to automatically
-download but not install, you can also utilize the module to stage
-updates by telling it to `search` for updates. We also have the ability
-to whitelist or blacklist updates. For example we could tell it to only
-install one particular security update instead of every update
-available.
-
+Windows Updates. 
 To begin, we are going to create a new playbook. We will be repeating
 the steps you performed in the earlier exercises.
 
@@ -40,9 +31,7 @@ Section 2: Write your Playbook
 
 Edit your site.yml and add a play definition and some tasks to your
 playbook. This will cover a very basic playbook for installing Windows
-Updates. Typically you would have even more tasks to accomplish the
-entire update process. This might entail creating service tickets,
-creating snapshots, or disabling monitoring.
+Updates.
 
 <!-- {% raw %} -->
 ```yaml
@@ -65,17 +54,14 @@ creating snapshots, or disabling monitoring.
 >     updates. We tell it to only install updates from specific
 >     categories using a variable. `reboot` attribute will automatically
 >     reboot the remote host if it is required and continue to install
->     updates after the reboot. We will also use a survey variable to
->     stop us from rebooting even if needed. If the reboot\_server value
->     is not specified we will set the reboot attribute to yes.
->
+>     updates after the reboot.
+
 Section 3: Save and Commit
 ==========================
 
 Your playbook is done! But remember we still need to commit the changes
 to source code control.
 
-Click `File` → `Save All` to save the files you’ve written
 
 ![site.yml](images/7-win_update-playbook.png)
 
@@ -111,7 +97,7 @@ Complete the form using the following values
 | NAME               | Windows Updates            |      |
 | DESCRIPTION        |                            |      |
 | JOB TYPE           | Run                        |      |
-| INVENTORY          | Windows Workshop Inventory |      |
+| INVENTORY          | Workshop Inventory         |      |
 | PROJECT            | Ansible Workshop Project   |      |
 | Playbook           | `win_updates/site.yml`     |      |
 | MACHINE CREDENTIAL | Student Account            |      |

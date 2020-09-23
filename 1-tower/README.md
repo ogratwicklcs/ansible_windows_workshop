@@ -19,8 +19,6 @@ Logging into Tower
 
 Your Ansible Tower instance url and credentials were supplied to you on the page created for this workshop.
 
-Your Ansible Tower license has already been applied for you, so after
-logging in you should now see the Dashboard.
 
 Creating a Machine Credential
 =============================
@@ -29,10 +27,6 @@ Credentials are utilized by Tower for authentication when launching jobs
 against machines, synchronizing with inventory sources, and importing
 project content from a version control system.
 
-There are many [types of
-credentials](http://docs.ansible.com/ansible-tower/latest/html/userguide/credentials.html#credential-types)
-including machine, network, and various cloud providers. In this
-workshop, we are using a **machine** credential.
 
 Step 1:
 -------
@@ -88,12 +82,6 @@ Select SAVE ![Save](images/at_save.png)
 
 Creating a Project
 ==================
-
-A Project is a logical collection of Ansible playbooks, represented in
-Tower. You can manage playbooks and playbook directories by either
-placing them manually under the Project Base Path on your Tower server,
-or by placing your playbooks into a source code management (SCM) system
-supported by Tower, including Git, Subversion, and Mercurial.
 
 Step 1:
 -------
@@ -190,9 +178,7 @@ Step 3:
 
 In the Hosts view, we can see every host associated with this
 inventory. You will also see which groups a host is associated with.
-Hosts can be associated with multiple groups. These groups can later
-then be used to narrow down to the exact hosts we will later run our
-playbooks on.
+Hosts can be associated with multiple groups.
 
 ![Hosts View](images/1-tower-hosts-view.png)
 
@@ -203,9 +189,6 @@ If you click the **GROUPS** button and then select the **Windows** group, you ca
 
 ![Group Edit](images/1-tower-group-edit.png)
 
-Today, we have already defined a handful of variables to tell Ansible how to connect to hosts in this group. You do not have to define these variables as
-a Group variable here, they could also be Host variables or reside
-directly in your Template or Playbook. However, because these variables will be the same for **ALL** windows hosts in our environment, we defined them for the entire windows group.
 
 By default, Ansible will attempt to use SSH to connect to any Host, so
 for Windows we need to tell it utilize a different connection method, in

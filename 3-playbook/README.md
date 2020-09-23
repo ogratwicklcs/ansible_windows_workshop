@@ -5,16 +5,6 @@ structure for storing our playbooks. This directory structure will sync
 with a **source control management** (SCM) system to version our
 playbooks. We will be using **git** as out SCM.
 
-A playbook can have multiple plays and a play can have one or multiple
-tasks. The goal of a **play** is to map a group of hosts. The goal of a
-**task** is to implement modules against those hosts.
-
-For our first playbook, we are only going to write 1 play and 3 tasks.
-
-All of our playbooks will be stored in a single git **repository**.
-Multiple users can use the same repository and git will manage file
-conflicts and versions.
-
 Overview
 ========
 
@@ -26,16 +16,6 @@ the general workflow.
 
 Section 1: Creating a Directory Structure and Files for your Playbook
 =====================================================================
-
-There is a [best
-practice](http://docs.ansible.com/ansible/playbooks_best_practices.html)
-on the preferred directory structures for playbooks. We strongly
-encourage you to read and understand these practices as you develop your
-Ansible skills. That said, our playbook today is very basic and a
-complex directory structure is not necessary.
-
-Instead, we are going to create a very simple directory structure for
-our playbook, and add just a couple of files.
 
 **Step 1:**
 
@@ -179,10 +159,7 @@ of this exercise.
 Section 4: Saving your Playbook
 ===============================
 
-Now that you’ve completed writing your playbook, it would be a shame not
-to keep it. Click `File > Save` from the menu.
-
-And that should do it. You should now have a fully written playbook
+You should now have a fully written playbook
 called `install_iis.yml`.
 
 But wait!!! We haven’t committed our changes from our **local** copy to
@@ -192,10 +169,7 @@ the far left of the page that has the blue circle with \# 1 in it)
 ![Git Commit](images/3-vscode-click-commit.png)
 
 Type in a commit message such as *Adding install\_iis.yml* in the text
-box at the top of the sidebar. Click the check box above to commit. This
-message is intended to describe the changes you made so that others
-(including yourself) better understand what is changing when comparing
-versions.
+box at the top of the sidebar. Click the check box above to commit. 
 
 ![Git Commit install\_iis.yml](images/3-vscode-commit.png)
 
@@ -220,15 +194,6 @@ to GitLab to verify. Go back to the workshop page, and click the link under **Gi
 
 You are ready to automate!
 
-> **Note**
->
-> Ansible (well, YAML really) can be a bit particular about formatting
-> especially around indentation/spacing. When you get back to the
-> office, read up on this [YAML
-> Syntax](http://docs.ansible.com/ansible/YAMLSyntax.html) a bit more
-> and it will save you some headaches later. In the meantime, your
-> completed playbook should look like this. Take note of the spacing and
-> alignment.
 
 <!-- {% raw %} -->
 ```yaml

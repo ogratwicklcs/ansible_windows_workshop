@@ -2,31 +2,6 @@ Previous exercises showed you the basics of Ansible playbooks. In the
 next few exercises, we are going to teach some more advanced ansible
 skills that will add flexibility and power to your playbooks.
 
-Ansible exists to make tasks simple and repeatable. We also know that
-not all systems are exactly alike and often require some slight change
-to the way an Ansible playbook is run. Enter variables.
-
-Variables are how we deal with differences between your systems,
-allowing you to account for a change in port, IP address or directory.
-
-Loops enable us to repeat the same task over and over again. For
-example, lets say you want to start multiple services, install several
-features, or create multiple directories. By using an ansible loop, you
-can do that in a single task.
-
-Handlers are the way in which we restart services. Did you just deploy a
-new config file, install a new package? If so, you may need to restart a
-service for those changes to take effect. We do that with a handler.
-
-For a full understanding of variables, loops, and handlers; check out
-our Ansible documentation on these subjects.
-[Ansible
-Variables](http://docs.ansible.com/ansible/latest/playbooks_variables.html)
-[Ansible
-Loops](http://docs.ansible.com/ansible/latest/playbooks_loops.html)
-[Ansible
-Handlers](http://docs.ansible.com/ansible/latest/playbooks_intro.html#handlers-running-operations-on-change)
-
 Section 1: Creating the Playbook
 ================================
 
@@ -180,9 +155,8 @@ for creating your template. Enter the following details:
 Step 2:
 -------
 
-Edit back your playbook, `site.yml`, by opening your firewall ports and
-writing the template. Use single quotes for `win_template` in order to
-not escape the forward slash.
+Switch back to your playbook, `site.yml`.  Add another task for firewall rules as well as deploying your newely created
+Jinja2 template.
 
 <!-- {% raw %} -->
 ```yaml
@@ -217,9 +191,7 @@ not escape the forward slash.
 > **So… what did I just write?**
 >
 > - `win_firewall_rule:` This module is used to create, modify, and
->   update firewall rules. Note in the case of AWS there are also
->   security group rules which may impact communication. We’ve opened
->   these for the ports in this example.
+>   update firewall rules. 
 >
 > - `win_template:` This module specifies that a jinja2 template is
 >   being used and deployed.
@@ -232,12 +204,6 @@ not escape the forward slash.
 
 Section 3: Defining and Using Handlers
 ======================================
-
-There are any number of reasons we often need to restart a
-service/process including the deployment of a configuration file,
-installing a new package, etc. There are really two parts to this
-Section; adding a handler to the playbook and calling the handler after
-the a task. We will start with the former.
 
 The `handlers` block should start after a one-level indentation, that
 is, two spaces. It should align with the `tasks` block.
@@ -258,15 +224,13 @@ Define a handler.
 
 > **Note**
 >
-> **You can’t have a former if you don’t mention the latter**
->
 > - `handler:` This is telling the **play** that the `tasks:` are
 >   over, and now we are defining `handlers:`. Everything below that
 >   looks the same as any other task, i.e. you give it a name, a
 >   module, and the options for that module. This is the definition of
 >   a handler.
 >
-> - `notify: restart iis service` …and here is your latter. Finally!
+> - `notify: restart iis service` 
 >   The `notify` statement is the invocation of a handler by name.
 >   Quite the reveal, we know. You already noticed that you’ve added a
 >   `notify` statement to the `win_iis_website` task, now you know

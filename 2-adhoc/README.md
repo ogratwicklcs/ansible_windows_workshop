@@ -1,11 +1,8 @@
 Section 1: Ad-hoc commands
 ==========================
 
-For our first exercise, we are going to run some ad-hoc commands to help
-you get a feel for how Ansible works. Ansible Ad-Hoc commands enable you
-to perform tasks on remote nodes without having to write a playbook.
-They are very useful when you simply need to do one or two things
-quickly, to many remote nodes.
+Ansible Ad-Hoc commands enable you to perform tasks on remote nodes without having to write a playbook.
+They are very useful when you simply need to do one or two things quickly, to many remote nodes.
 
 Step 1:
 -------
@@ -23,8 +20,7 @@ button become enabled. Click it now.
 This will pop up the **Execute Command** window. From here is where we
 can run a single task against our hosts.
 
-Let’s start with something really basic - pinging a host. The `win_ping`
-module makes sure our windows hosts are responsive. This is not a
+The `win_ping` module makes sure our windows hosts are responsive. This is not a
 traditional *ping*, but actually verifying both connectivity and
 authentication to the host.
 
@@ -40,9 +36,7 @@ Fill out this form as follows
 ![Run Win\_Ping](images/2-adhoc-run-win_ping.png)
 
 Once you click **LAUNCH** you will be redirected to the Job log. Every
-job and action in Ansible Tower is recorded and stored. These logs can
-be auto-rotated and can also be exported automatically to another
-logging system such as Splunk or ELK.
+job and action in Ansible Tower is recorded and stored. 
 
 The first part of the log shows you the details of the job. This
 includes information such as who launched the job, against what hosts,
@@ -112,9 +106,7 @@ And now reboot the host.
 End Result
 ----------
 
-Ad-hoc commands may be useful to run once in a while. However, as automation continues to grow within an environment, they are used less and less often. In the IIS example above, this could have (should have) been written out in a playbook instead of executed through a laborious series of ad-hoc commands. This interaction with ad-hoc commands seems to mimic running individual commands from a CLI. Additional exercises will really make this clear.
-
-*Also, did you catch this?* When a task is performed on a Windows server, Ansible is smart enough to know whether a reboot is required after executing that task. The below is part of the output of the command to remove the IIS feature. The output of this task can be used in subsequent tasks, like whether or not to reboot before continuing. 
+When a task is performed on a Windows server, Ansible is smart enough to know whether a reboot is required after executing that task. The below is part of the output of the command to remove the IIS feature. The output of this task can be used in subsequent tasks, like whether or not to reboot before continuing. 
 
 ![Reboot required](images/2-adhoc-reboot-required.png)
 

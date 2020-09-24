@@ -116,7 +116,7 @@ Fill out the form with the following values:
 |--------------------|----------------------------|------|
 | name               | Windows Application List           |      |
 | Job type           | Run                        |      |
-| Inventory          | Windows Workshop Inventory |      |
+| Inventory          | Workshop Inventory         |      |
 | Project            | Ansible Workshop Project   |      |
 | Playbook           | `chocolatey/app_list.yml`     |      |
 | Credentials | Student Account            |      |
@@ -135,7 +135,7 @@ See below for values.
 |--------------------|----------------------------|------|
 | Name               | Windows Application Management |      |
 | Job Type           | Execution                        |      |
-| Inventory          | Windows Workshop Inventory |      |
+| Inventory          | Workshop Inventory          |      |
 | Project            | Ansible Workshop Project   |      |
 | Playbook           | `chocolatey/app_manage.yml`     |      |
 | Credentials | Student Account            |      |

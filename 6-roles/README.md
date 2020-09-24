@@ -23,6 +23,7 @@ Create folder structure for your first role underneath the iis_advanced director
 ```bash
 [studentX@ansible ~]$ cd ~/windows-workshop/workshop_project/iis_advanced
 [studentX@ansible iis_advanced]$ mkdir roles
+[studentX@ansible roles]$ cd roles
 [studentX@ansible roles]$ mkdir iis_simple
 [studentX@ansible roles]$ cd iis_simple
 [studentX@ansible iis_simple]$ mkdir defaults vars handlers tasks templates

@@ -32,3 +32,4 @@ If your experience is different in schedulung these workshops, please let us kno
 - [Exercise 5 - Advanced playbooks](5-adv-playbook)
 - [Exercise 6 - Ansible roles](6-roles)
 - [Exercise 7 - Patching Windows](7-win-patch)
+- [Exercise 8 - Package Management Windows](8-win-appmanage)

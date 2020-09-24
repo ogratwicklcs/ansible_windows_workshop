@@ -117,7 +117,7 @@ of this exercise.
 
 - These three lines are calling the Ansible module **`win_feature`** to
   install the IIS Web Server. [Click
-  here](http://docs.ansible.com/ansible/latest/win_feature_module.html)
+  here](https://docs.ansible.com/ansible/latest/collections/ansible/windows/win_feature_module.html)
   to see all options for the `win_feature` module.
 
 <!-- -->
@@ -130,7 +130,7 @@ of this exercise.
 - The next few lines are using the ansible module **win\_service** to
   start the IIS service. The `win_service` module is the preferred way
   of controlling services on remote hosts. [Click
-  here](http://docs.ansible.com/ansible/latest/win_service_module.html)
+  here](https://docs.ansible.com/ansible/latest/collections/ansible/windows/win_service_module.html)
   to learn more about the **`win_service`** module.
 
 <!-- {% raw %} -->

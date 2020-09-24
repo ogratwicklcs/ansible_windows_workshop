@@ -56,7 +56,6 @@ Make a backup copy of `site.yml`, then create a new `site.yml`.
 Navigate to your `iis_advanced` folder, right click `site.yml`, click
 `rename`, and call it `site.yml.backup`
 
-Create a blank new file called `site.yml` in the same folder
 
 Step 2:
 -------

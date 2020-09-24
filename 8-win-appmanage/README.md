@@ -52,7 +52,7 @@ We are going to create two playbooks now.
 　Add, remove and update applications.
 
 First, let's create from 1.
-app_list.ymlMake sure that the editor for editing the Playbook is open in the right pane and do the following:
+app_list.yml  Make sure that the editor for editing the Playbook is open in the right pane and do the following:
 
 <!-- {% raw %} -->
 ```yaml

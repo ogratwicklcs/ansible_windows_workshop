@@ -1,5 +1,5 @@
 # Ansible Workshop - Ansible for Windows Automation
-
+Lab Connection Information: http://e8e8.open.redhat.com/ 
 Ansible is a simple yet powerful IT automation engine for application deployment, configuration management, and orchestration that you can learn quickly.
 
 Ansible Tower is one of the components that makes up Red Hat Ansible Automation Platform and serves as the web ui, api and control node that executes Ansible playbooks.

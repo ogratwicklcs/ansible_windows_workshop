@@ -2,7 +2,6 @@
 
 Another big motivation for managing Windows with Ansible is automation of application management. 
 
-There are several ways to manage applications on Windows with Ansible. For example, the win_feature module from Exercise 2 can be used to manage applications provided by the OS. On the other hand, if it is not a function provided by the OS but by a 3rd party application, there is a module called win_package and win_chocolatey.
 
 ### Preparation 
 
@@ -148,8 +147,8 @@ See below for values.
 
 Let's run the created Playbook in the following order and check the displayed contents 
 
-1. `Windows Application List
-2. `Windows Application Management
+1. Windows Application List
+2. Windows Application Management
 
 What happened? Was Chrome additionally installed?
 Once installed, you should see something like this:

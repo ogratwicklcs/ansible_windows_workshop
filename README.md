@@ -1,5 +1,3 @@
-# Lab Connection Information: http://e8e8.open.redhat.com/ 
-
 # Ansible Workshop - Ansible for Windows Automation
 
 Ansible is a simple yet powerful IT automation engine for application deployment, configuration management, and orchestration that you can learn quickly.

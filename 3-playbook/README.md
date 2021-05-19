@@ -24,7 +24,7 @@ Open Visual Studio Code
 For this lab, we have already created a clone of your Git repository for
 you.
 
-To access it, click the link for VS Code Access from the workshop page.
+To access it, select the link for VS Code Access from the workshop page.
 
 ![VS Code Access](images/3-vscode-access.png)
 
@@ -36,9 +36,9 @@ section with only a README file in it.
 **Step 2:** Create a directory called **iis\_basic** and a file called
 `install_iis.yml`
 
-Hover over the *WORKSHOP_PROJECT* section and click the *New Folder* button.
-Create a folder called `iis_basic`. Then click that folder so it is
-selected. Right click the new folder you’ve created and create a file
+Hover over the *WORKSHOP_PROJECT* section and select the *New Folder* button.
+Create a folder called `iis_basic`. Then select that folder so it is
+selected. Right select the new folder you’ve created and create a file
 called `install_iis.yml`.
 
 You should now have an editor open in the right pane that can be used
@@ -115,7 +115,7 @@ of this exercise.
 ```
 
 - These three lines are calling the Ansible module **`win_feature`** to
-  install the IIS Web Server. [Click
+  install the IIS Web Server. [select
   here](https://docs.ansible.com/ansible/latest/collections/ansible/windows/win_feature_module.html)
   to see all options for the `win_feature` module.
 
@@ -128,7 +128,7 @@ of this exercise.
 
 - The next few lines are using the ansible module **win\_service** to
   start the IIS service. The `win_service` module is the preferred way
-  of controlling services on remote hosts. [Click
+  of controlling services on remote hosts. [select
   here](https://docs.ansible.com/ansible/latest/collections/ansible/windows/win_service_module.html)
   to learn more about the **`win_service`** module.
 
@@ -162,36 +162,30 @@ You should now have a fully written playbook
 called `install_iis.yml`.
 
 But wait!!! We haven’t committed our changes from our **local** copy to
-**git**. Click the Source Code icon as shown below (It is the middle on
+**git**. select the Source Code icon as shown below (It is the middle on
 the far left of the page that has the blue circle with \# 1 in it)
 
-![Git Commit](images/3-vscode-click-commit.png)
+![Git Commit](images/3-vscode-select-commit.png)
 
 Type in a commit message such as *Adding install\_iis.yml* in the text
-box at the top of the sidebar. Click the check box above to commit. 
+box at the top of the sidebar. select the check box above to commit. 
 
 ![Git Commit install\_iis.yml](images/3-vscode-commit.png)
 
 Now you need to push the committed changes to your repository.
 
-On the bottom left blue bar, click the section that contains the
-circular arrows to push the changes.
+On the bottom left blue bar,  the section that contains the
+circular arrows to push the changes or if you have a cloud with an arrow pointing at it.   
 
 ![Git Push Origin](images/3-vscode-push.png)
-
-This may take as long as 30 seconds to push. After your first push, you
-may get a pop-up message asking if you would like to periodically run
-git fetch. Because you’re the only one working on the git repo, you can
-click **Yes** or **No**.
-
-![Git Push Origin](images/3-vscode-push-initial-pop-up.png)
+or
+![Git Push Origin 2](images/3-vscode-push_2.png)
 
 If you’re interested in validating the code is in git, you can connect
-to GitLab to verify. Go back to the workshop page, and click the link under **GitLab Access** taking note of your username and password.
+to GitLab to verify. Go back to the workshop page, and select the link under **GitLab Access** taking note of your username and password.
 
 ![GitLab access](images/3-vscode-gitlab-access.png)
 
-You are ready to automate!
 
 
 <!-- {% raw %} -->

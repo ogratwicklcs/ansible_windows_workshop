@@ -38,7 +38,7 @@ section with only a README file in it.
 
 Hover over the *WORKSHOP_PROJECT* section and click the *New Folder* button.
 Create a folder called `iis_basic`. Then select that folder so it is
-highlighted. Right select the new folder you’ve created and create a file
+highlighted. Right click the new folder you’ve created and create a file
 called `install_iis.yml`.
 
 You should now have an editor open in the right pane that can be used

@@ -10,7 +10,7 @@ Step 1:
 Select **Inventories** on the left panel, and then select the name of our Inventory **Workshop Inventory**. 
 Now that you are on the Inventory Details page, we will select our Host. So select **HOSTS**.
 
-Select the Windows machine within in your inventory named **studentX-win1**. You will then be able to selec the **RUN COMMANDS**
+Select the Windows machine within in your inventory named **studentX-win1**. You will then be able to select the **RUN COMMANDS**
 button at the top right.
 ![Run Command](images/2-adhoc-run-command.png)
 

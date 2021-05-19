@@ -71,9 +71,8 @@ Section 3: Adding Tasks to Your Play
 Now that we’ve defined your play, let’s add some tasks to get some
 things done. Align (vertically) the **t** in `task` with the **h** in
 `hosts`.
-Yes, it does actually matter. In fact, you should make sure all of your
-playbook statements are aligned in the way shown here. You also must use
-spaces for indentation. Tabs are not valid YAML syntax.
+Make sure to follow the indentation shown here as spacing in playbooks is very important. You also have use
+spaces for indentation as tabs are not valid YAML syntax.
 If you want to see the entire playbook for reference, skip to the bottom
 of this exercise.
 

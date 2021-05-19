@@ -165,7 +165,7 @@ But wait!!! We haven’t committed our changes from our **local** copy to
 **git**. select the Source Code icon as shown below (It is the middle on
 the far left of the page that has the blue circle with \# 1 in it)
 
-![Git Commit](images/3-vscode-select-commit.png)
+![Git Commit](images/3-vscode-click-commit.png)
 
 Type in a commit message such as *Adding install\_iis.yml* in the text
 box at the top of the sidebar. select the check box above to commit. 

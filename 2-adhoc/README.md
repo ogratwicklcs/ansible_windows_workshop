@@ -10,10 +10,8 @@ Step 1:
 Select **Inventories** on the left panel, and then select the name of our Inventory **Workshop Inventory**. 
 Now that you are on the Inventory Details page, we will select our Host. So select **HOSTS**.
 
-Next to each host is a checkbox. Check the box next to each host you
-want to run an Ad-Hoc Command on. You will then see the **RUN COMMANDS**
-button become enabled. Click it now.
-
+Select the Windows machine within in your inventory named **studentX-win1**. You will then be able to selec the **RUN COMMANDS**
+button at the top right.
 ![Run Command](images/2-adhoc-run-command.png)
 
 This will pop up the **Execute Command** window. From here is where we

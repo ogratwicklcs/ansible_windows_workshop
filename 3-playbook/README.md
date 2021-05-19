@@ -36,9 +36,9 @@ section with only a README file in it.
 **Step 2:** Create a directory called **iis\_basic** and a file called
 `install_iis.yml`
 
-Hover over the *WORKSHOP_PROJECT* section and select the *New Folder* button.
+Hover over the *WORKSHOP_PROJECT* section and click the *New Folder* button.
 Create a folder called `iis_basic`. Then select that folder so it is
-selected. Right select the new folder you’ve created and create a file
+highlighted. Right click the new folder you’ve created and create a file
 called `install_iis.yml`.
 
 You should now have an editor open in the right pane that can be used
@@ -71,7 +71,7 @@ Section 3: Adding Tasks to Your Play
 Now that we’ve defined your play, let’s add some tasks to get some
 things done. Align (vertically) the **t** in `task` with the **h** in
 `hosts`.
-Make sure to follow the indentation shown here as spacing in playbooks is very important. You also have use
+Make sure to follow the indentation shown here as spacing in playbooks is very important. You also have to use
 spaces for indentation as tabs are not valid YAML syntax.
 If you want to see the entire playbook for reference, skip to the bottom
 of this exercise.
@@ -115,7 +115,7 @@ of this exercise.
 ```
 
 - These three lines are calling the Ansible module **`win_feature`** to
-  install the IIS Web Server. [select
+  install the IIS Web Server. [click
   here](https://docs.ansible.com/ansible/latest/collections/ansible/windows/win_feature_module.html)
   to see all options for the `win_feature` module.
 
@@ -128,7 +128,7 @@ of this exercise.
 
 - The next few lines are using the ansible module **win\_service** to
   start the IIS service. The `win_service` module is the preferred way
-  of controlling services on remote hosts. [select
+  of controlling services on remote hosts. [click
   here](https://docs.ansible.com/ansible/latest/collections/ansible/windows/win_service_module.html)
   to learn more about the **`win_service`** module.
 
@@ -162,13 +162,13 @@ You should now have a fully written playbook
 called `install_iis.yml`.
 
 But wait!!! We haven’t committed our changes from our **local** copy to
-**git**. select the Source Code icon as shown below (It is the middle on
+**git**. Click the Source Code icon as shown below (It is the middle on
 the far left of the page that has the blue circle with \# 1 in it)
 
-![Git Commit](images/3-vscode-select-commit.png)
+![Git Commit](images/3-vscode-click-commit.png)
 
 Type in a commit message such as *Adding install\_iis.yml* in the text
-box at the top of the sidebar. select the check box above to commit. 
+box at the top of the sidebar. Check the check box above to commit. 
 
 ![Git Commit install\_iis.yml](images/3-vscode-commit.png)
 

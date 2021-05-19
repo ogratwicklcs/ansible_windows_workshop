@@ -219,19 +219,13 @@ If you click the **HOSTS** button, you can view the hosts belonging to the windo
 
 ![Host Edit](images/1-tower-host-edit.png)
 
-**`ansible_host`**
+**`ansible_host`** - The IP address of this particular server
 
-This is the IP address of this particular server
+**`ansible_password`**  - The password needed to connect to this server
 
-**`ansible_password`** 
+**`ansible_user`** - The username that Ansible will use along with the password to connect to this server
 
-This is the password needed to connect to this server
-
-**`ansible_user`**
-
-This is the username that Ansible will use along with the password to connect to this server
-
-These variables are very host specific thus have been defined at the host level instead of at the group level.
+These variables are host specific thus have been defined at the host level instead of at the group level.
 
 You can find more information about these and other settings in our
 [Windows

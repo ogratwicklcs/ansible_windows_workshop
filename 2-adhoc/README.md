@@ -7,9 +7,8 @@ They are very useful when you simply need to do one or two things quickly, to ma
 Step 1:
 -------
 
-To start, we will need to go to our Inventory. So click **Inventories**
-on the left panel, and then click the name of our Inventory **Workshop Inventory**. Now that you are on the Inventory Details page, we
-will need to go select our Host. So click **HOSTS**.
+Select **Inventories** on the left panel, and then select the name of our Inventory **Workshop Inventory**. 
+Now that you are on the Inventory Details page, we will select our Host. So select **HOSTS**.
 
 Next to each host is a checkbox. Check the box next to each host you
 want to run an Ad-Hoc Command on. You will then see the **RUN COMMANDS**

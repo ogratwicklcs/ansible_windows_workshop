@@ -119,8 +119,6 @@ Add a new task called **install IIS**. After writing the playbook, click
 Section 2: Opening Firewall and Deploying Files
 ===============================================
 
-After that, you will define a task to start the IIS service.
-
 Step 1:
 -------
 

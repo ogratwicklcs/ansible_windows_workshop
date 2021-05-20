@@ -1,5 +1,5 @@
-*LAB CONNECTION: http://fd90.open.redhat.com/*
-
+LAB CONNECTION: http://fd90.open.redhat.com/
+============================================
 
 Configuring Ansible Tower
 =========================

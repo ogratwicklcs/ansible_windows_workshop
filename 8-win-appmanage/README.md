@@ -9,7 +9,7 @@ To use Chocolatey, you need to install chocolatey software on your Windows host.
 
 In Ansible Tower, Inventory → Windows Workshop Inventory → Hosts
 
-Check　the **studentX-win1** box and click "Run Command" .
+Check the **studentX-win1** box and click "Run Command" .
 
 On the Run Command screen, select the options below.
 

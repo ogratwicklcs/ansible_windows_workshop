@@ -172,7 +172,7 @@ On the right-hand side a new menu will be available.
 
 ![ Workflow Page ](images/8-workflow_menu.png)
 
-In Ansible Tower Workflows you are able to orchestrate the execution of multiple templates, dynamic inventory sync, project sync, and approvals for further execution in the workflow.  For more information on workflows [click
+In Ansible Tower Workflows you are able to orchestrate the execution of multiple templates, dynamic inventory syncs, project syncs, and approvals for further execution in the workflow.  For more information on workflows [click
   here](https://docs.ansible.com/ansible-tower/latest/html/userguide/workflows.html)
 
 - Make sure the menu has `Template` selected at the top and then select the first playbook we want to add to this workflow: `Windows Application Management` and select the green box **Select** at the bottom.  

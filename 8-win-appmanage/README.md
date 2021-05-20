@@ -134,7 +134,7 @@ See below for values.
 | Key                | Value                      | Remarks |
 |--------------------|----------------------------|------|
 | Name               | Windows Application Management |      |
-| Job Type           | Execution                        |      |
+| Job Type           | Run                        |      |
 | Inventory          | Workshop Inventory          |      |
 | Project            | Ansible Workshop Project   |      |
 | Playbook           | `chocolatey/app_manage.yml`     |      |

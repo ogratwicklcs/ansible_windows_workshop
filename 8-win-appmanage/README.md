@@ -185,7 +185,7 @@ In Ansible Tower Workflows you are able to orchestrate the execution of multiple
 
 - Once back at the Workflow menu page select `Launch` to start the Worfklow
 
-- To inspect the output for each Template, click the blue `Details` button at the top of each Template in the Workflow execution page
+- To inspect the output for each Template, click the blue `Details` button at the top of each Template on the Workflow execution page
 
 
 What happened? Was Chrome additionally installed?

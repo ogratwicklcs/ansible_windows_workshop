@@ -194,9 +194,6 @@ Jinja2 template.
 > - `win_template:` This module specifies that a jinja2 template is
 >   being used and deployed.
 >
-> - used in Ansible to transform data inside a template expression,
->   i.e. filters.
->
 > - `debug:` Again, like in the `iis_basic` playbook, this task displays the URLs to access the sites we are creating for this exercise
 
 

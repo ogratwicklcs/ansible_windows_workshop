@@ -13,14 +13,13 @@ Check　the "studentX-win1" box and click "Run Command" .
 
 On the Run Command screen, select the options below.
 
-**Module:**  
-　win_shell
+| Key                | Value           | Note                                                            |
+|--------------------|-----------------|-----------------------------------------------------------------|
+| Module             | `win_shell`      |                                                                 |
+| Arguments          |                 | Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))                                            |
+| Limit              |                 | This will be pre-filled out for you with the hosts you selected |
+| MACHINE CREDENTIAL | Student Account |                                                                 |
 
-**Argument:**
-　 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-
-**Machine Credentials:**
-　Student Account
 
 Chocolatey is now available on your Windows host. Ready!!!
 

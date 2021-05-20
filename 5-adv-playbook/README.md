@@ -227,9 +227,8 @@ Define a handler.
 >
 > - `notify: restart iis service` 
 >   The `notify` statement is the invocation of a handler by name.
->   Quite the reveal, we know. You already noticed that you’ve added a
->   `notify` statement to the `win_iis_website` task, now you know
->   why.
+>   You already noticed that you’ve added a
+>   `notify` statement to the `win_iis_website` task.
 
 Section 4: Commit and Review
 ============================

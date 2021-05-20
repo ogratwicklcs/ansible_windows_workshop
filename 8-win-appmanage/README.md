@@ -181,7 +181,7 @@ In Ansible Tower Workflows you are able to orchestrate the execution of multiple
 
 - Once both the Templates have been added you can save the workflow. 
 
-![ Save Workflow ](images/8-save_workflow)
+![ Save Workflow ](images/8-save_workflow.png)
 
 - Once back at the Workflow menu page select `Launch` to start the Worfklow
 

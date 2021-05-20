@@ -143,16 +143,48 @@ See below for values.
 | options            | [*] Check to enable fact cache     |      |
 
 
-### Launch Playbook
+## Create Workflow Template
 
-Let's run the created Playbook in the following order and check the displayed contents 
+We will now combine the 2 Templates we created into a workflow that will run the Templates in a specified order.
 
-1. Windows Application List
-2. Windows Application Management
+### Create Workflow 
+
+Go to Templates, click add and this time select `Workflow Template`
+![Create Workflow Template](images/8-add_workflow.png)
+
+See below for values. 
+
+| Key                | Value                      | Remarks |
+|--------------------|----------------------------|------|
+| Name          | Workshop Workflow          |      |
+
+Click the `Save` button.  
+
+### Workflow Visualizer
+
+Once Workflow has been saved a new pop-up window is created.  
+Click on the `Start` button in order to start creating the Workflow.
+![Start Workflow](images/8-workflow-start.png)
+
+On the right-hand side a new menu will be available.  
+![ Workflow Page ](images/8-workflow_menu.png)
+
+In Ansible Tower Workflows you are able to orchestrate the execution of multiple templates, dynamic inventory sync, project sync, and approvals for further execution in the workflow.  For more information on workflows [click
+  here](https://docs.ansible.com/ansible-tower/latest/html/userguide/workflows.html)
+
+- Make sure the menu has `Template` selected at the top and then select the first playbook we want to add to this workflow: `Windows Application Management` and select the green box **Select** at the bottom.  
+
+- After creating the first template in your workflow, click on the small green plus that you will see when you hover over the template in the Workflow Visualizer.  Next select the second playbook: `Windows Application List` and select the green box **Select** at the bottom.
+
+- Once both the Templates have been added you can save the workflow. [ Save Workflow ](images/8-save_workflow)
+
+- Once back at the Workflow menu page select `Launch` to start the Worfklow
+
+- To inspect the output for each Template, click the blue `Details` button at the top of each Template in the Workflow execution page
+
 
 What happened? Was Chrome additionally installed?
 Once installed, you should see something like this:
 
-![Create Job Template](images/8-chrome-installed.ja.jpg)
 
 This completes the Lab 8! Thank you for your hard work! !!

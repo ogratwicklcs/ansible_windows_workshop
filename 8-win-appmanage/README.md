@@ -5,7 +5,7 @@ Another big motivation for managing Windows with Ansible is automation of applic
 
 ### Preparation 
 
-To use Chocolatey, you need to install chocolatey software on your Windows host. Let's also automate this with Ansible. Using Exercise 2 as a reference, use the PowerShell ad hoc commands win_shellto do the following:
+To use Chocolatey, you need to install chocolatey software on your Windows host. Let's also automate this with Ansible. Using Exercise 2 as a reference, use the PowerShell ad hoc commands win_shell to do the following:
 
 In Ansible Tower, Inventory → Windows Workshop Inventory → Hosts
 

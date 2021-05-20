@@ -104,8 +104,9 @@ The playbook that displays the application list with chocolatey and the playbook
 
 ## Creating a job template
 
-Now that you have created a new playbook, go back to the Ansible Tower GUI and sync your project.
-Next, you need to create a new job template to run this playbook. Go to Templates , click Add and select Job Template to create a new job template.
+Now that you have created a new playbook, go back to the Ansible Tower GUI and `sync your project`.
+Next, you need to create a new job template to run this playbook. 
+Go to Templates , click Add and select Job Template to create a new job template.
 
 ### 1. Creating a job template for app_list.yml
 

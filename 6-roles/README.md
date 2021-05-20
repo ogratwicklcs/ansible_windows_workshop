@@ -28,7 +28,6 @@ Create folder structure for your first role underneath the iis_advanced director
 [studentX@ansible roles]$ cd iis_simple
 [studentX@ansible iis_simple]$ mkdir defaults vars handlers tasks templates
 ```
-![Directory](images/bash.PNG)
 
 Step 3:
 -------

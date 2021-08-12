@@ -41,7 +41,7 @@ The finished structure will look like this:
 
 ![Role Structure](images/6-create-role.png)
 
-Section 2: Breaking Your `site.yml` Playbook into the Newly Created `iis_simple` Role
+Section 2: Breaking your `site.yml` playbook into the newly created `iis_simple` role
 =====================================================================================
 
 In this section, we will separate out the major parts of your playbook

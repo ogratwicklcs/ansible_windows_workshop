@@ -11,10 +11,7 @@ familiar to the one you created in exercise 3
 Step 1:
 -------
 
-Within Visual Studio Code, create a new directory in your git repo and
-create a site.yml file.
-
-In the Explorer accordion you should have a *WORKSHOP_PROJECT* section where
+In the Explorer tab of Visual Code you should have a *WORKSHOP_PROJECT* section where
 you previously made `iis_basic`.
 
 ![Student Playbooks](images/5-vscode-existing-folders.png)

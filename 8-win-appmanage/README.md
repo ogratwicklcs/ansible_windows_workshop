@@ -188,8 +188,4 @@ In Ansible Tower Workflows you are able to orchestrate the execution of multiple
 - To inspect the output for each Template, click the blue `Details` button at the top of each Template on the Workflow execution page
 
 
-What happened? Was Chrome additionally installed?
-Once installed, you should see something like this:
-
-
 This completes the Lab 8! Thank you for your hard work! !!

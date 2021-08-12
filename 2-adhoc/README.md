@@ -57,7 +57,7 @@ Step 2:
 -------
 
 Now, let’s install IIS using the `win_feature` module. Our arguments
-parameter is going to get a little more complex now.
+parameter is going to get a little more complex now.  Repeat the steps above to get back to the ad-hoc command page against **studentX-win1**.
 
 | Key                | Value                           | Note |
 |--------------------|---------------------------------|------|

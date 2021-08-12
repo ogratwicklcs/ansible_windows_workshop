@@ -120,7 +120,9 @@ Select **NEXT** and preview the inputs.
 Step 5:
 -------
 
-Select LAUNCH ![SurveyL](images/4-survey-launch.png)
+Select LAUNCH 
+
+![SurveyL](images/4-survey-launch.png)
 
 Step 6:
 -------
